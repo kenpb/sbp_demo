@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.kenpb</groupId>
+    <artifactId>plugins</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>plugins</name>
+
+    <parent>
+        <groupId>com.kenpb</groupId>
+        <artifactId>sbp_parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>sample_plugin</module>
+    </modules>
+
+</project>
