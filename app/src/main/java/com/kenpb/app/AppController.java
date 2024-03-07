@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class AppController {
 
-    @Autowired
+    @Autowired(required = false)
     private PluginManager pluginManager;
 
     @GetMapping

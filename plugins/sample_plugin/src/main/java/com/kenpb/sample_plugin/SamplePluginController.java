@@ -1,16 +1,24 @@
 package com.kenpb.sample_plugin;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+import de.tschuehly.spring.viewcomponent.jte.ViewContext;
+
+@Controller
 @RequestMapping("/sample-plugin")
 public class SamplePluginController {
 
+    private final SamplePluginVIewComponent samplePluginVIewComponent;
+
+    public SamplePluginController(SamplePluginVIewComponent samplePluginVIewComponent) {
+        this.samplePluginVIewComponent = samplePluginVIewComponent;
+    }
+
     @GetMapping
-    public String hello() {
-        return "hello";
+    public ViewContext hello() {
+        return samplePluginVIewComponent.render();
     }
 
 }
