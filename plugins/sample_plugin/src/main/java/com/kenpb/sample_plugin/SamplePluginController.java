@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/sample-plugin")
 public class SamplePluginController {
 
-    @GetMapping("/hello")
-    public String getHello() {
-        return "hello from sample plugin";
+    @GetMapping
+    public String hello() {
+        return "hello";
     }
 
 }

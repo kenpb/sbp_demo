@@ -1,5 +1,11 @@
 package com.kenpb.app;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.pf4j.PluginManager;
+import org.pf4j.PluginWrapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,9 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class AppController {
 
+    @Autowired
+    private PluginManager pluginManager;
+
     @GetMapping
-    public String getHello() {
-        return "Hello from app";
+    public List<String> list() {
+        return pluginManager.getResolvedPlugins().stream()
+                .map(PluginWrapper::getPluginId).collect(Collectors.toList());
     }
 
 }
