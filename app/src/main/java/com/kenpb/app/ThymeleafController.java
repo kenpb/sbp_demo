@@ -1,4 +1,4 @@
-package com.kenpb.sample_plugin;
+package com.kenpb.app;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/sample-plugin")
-public class SamplePluginController {
+@RequestMapping("/app")
+public class ThymeleafController {
 
     @GetMapping
-    public String index(Model model) {
-        return "plugin";
+    public String app(Model model) {
+        return "app";
     }
 
 }
