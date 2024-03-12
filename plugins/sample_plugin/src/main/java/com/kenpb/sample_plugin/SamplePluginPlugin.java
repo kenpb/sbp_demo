@@ -7,7 +7,8 @@ import org.pf4j.PluginWrapper;
 public class SamplePluginPlugin extends SpringBootPlugin {
 
     public SamplePluginPlugin(PluginWrapper wrapper) {
-        super(wrapper);
+        super(wrapper, new SamplePluginConfigurer());
+        // super(wrapper);
     }
 
     @Override
