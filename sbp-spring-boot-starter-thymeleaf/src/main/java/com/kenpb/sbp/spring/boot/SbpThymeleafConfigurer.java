@@ -1,4 +1,4 @@
-package com.kenpb.sample_plugin;
+package com.kenpb.sbp.spring.boot;
 
 import org.laxture.sbp.spring.boot.IPluginConfigurer;
 import org.laxture.sbp.spring.boot.SpringBootstrap;
@@ -6,7 +6,7 @@ import org.springframework.context.support.GenericApplicationContext;
 import org.thymeleaf.spring6.SpringTemplateEngine;
 import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 
-public class SamplePluginConfigurer implements IPluginConfigurer {
+public class SbpThymeleafConfigurer implements IPluginConfigurer {
 
     @Override
     public String[] excludeConfigurations() {
@@ -17,7 +17,8 @@ public class SamplePluginConfigurer implements IPluginConfigurer {
 
     @Override
     public void onBootstrap(SpringBootstrap bootstrap, GenericApplicationContext pluginApplicationContext) {
-        SpringTemplateEngine templateEngine = (SpringTemplateEngine) bootstrap.getMainApplicationContext().getBean("templateEngine");
+        SpringTemplateEngine templateEngine = (SpringTemplateEngine) bootstrap.getMainApplicationContext()
+                .getBean("templateEngine");
         templateEngine.addTemplateResolver(this.pluginTemplateResolver(pluginApplicationContext));
     }
 

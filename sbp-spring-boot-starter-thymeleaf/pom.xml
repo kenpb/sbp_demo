@@ -4,33 +4,34 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kenpb</groupId>
-    <artifactId>sample_plugin</artifactId>
+    <artifactId>sbp-spring-boot-starter-thymeleaf</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>
         <groupId>com.kenpb</groupId>
-        <artifactId>plugins</artifactId>
+        <artifactId>sbp_parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <properties>
-        <plugin.id>com.kenpb.sample_plugin</plugin.id>
-        <plugin.class>com.kenpb.sample_plugin.SamplePluginPlugin</plugin.class>
-        <plugin.version>0.0.1</plugin.version>
-        <plugin.provider>kenpb</plugin.provider>
-        <plugin.dependencies />
-    </properties>
-
     <dependencies>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.kenpb</groupId>
-            <artifactId>sbp-spring-boot-starter-thymeleaf</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure-processor</artifactId>
+        </dependency> -->
+
+        <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency> -->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
         <dependency>
@@ -38,11 +39,11 @@
             <artifactId>sbp-core</artifactId>
         </dependency>
 
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
     </dependencies>
 
 </project>
