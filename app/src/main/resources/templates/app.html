@@ -6,10 +6,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <h2>Rendered from the app!</h2>
+    <button hx-get="/sample-plugin" hx-target="#sample-plugin-target">Render plugin template using htmx</button>
+    <div id="sample-plugin-target"></div>
 </body>
 
 </html>

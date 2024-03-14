@@ -16,6 +16,7 @@
         <maven.deploy.plugin.version>2.8.2</maven.deploy.plugin.version>
         <maven.assembly.plugin.version>3.1.0</maven.assembly.plugin.version>
         <spring-boot.version>3.2.3</spring-boot.version>
+        <htmx-spring-boot-thymeleaf.version>3.2.0</htmx-spring-boot-thymeleaf.version>
         <sbp.version>3.1.22</sbp.version>
     </properties>
 
@@ -48,6 +49,20 @@
                 <groupId>org.laxture</groupId>
                 <artifactId>sbp-core</artifactId>
                 <version>${sbp.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/io.github.wimdeblauwe/htmx-spring-boot-thymeleaf -->
+            <dependency>
+                <groupId>io.github.wimdeblauwe</groupId>
+                <artifactId>htmx-spring-boot-thymeleaf</artifactId>
+                <version>${htmx-spring-boot-thymeleaf.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/io.github.wimdeblauwe/htmx-spring-boot -->
+            <dependency>
+                <groupId>io.github.wimdeblauwe</groupId>
+                <artifactId>htmx-spring-boot</artifactId>
+                <version>${htmx-spring-boot-thymeleaf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
