@@ -20,10 +20,12 @@
             "antVersion": "1.10.12",
             "groovyVersion": "2.5.22"
         }
-    }
+    },
 
     // Use 'forwardPorts' to make a list of ports inside the container available locally.
-    // "forwardPorts": [],
+    "forwardPorts": [
+        "8080:8080"
+    ]
 
     // Use 'postCreateCommand' to run commands after the container is created.
     // "postCreateCommand": "docker --version",

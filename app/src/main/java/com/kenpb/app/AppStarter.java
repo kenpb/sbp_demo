@@ -3,9 +3,7 @@ package com.kenpb.app;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication(scanBasePackages = "com.kenpb", exclude = {
-    // SecurityAutoConfiguration.class, SecurityFilterAutoConfiguration.class,
-})
+@SpringBootApplication(scanBasePackages = "com.kenpb")
 public class AppStarter {
 
     public static void main(String[] args) {
