@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import de.tschuehly.spring.viewcomponent.jte.ViewContext;
+import de.tschuehly.spring.viewcomponent.thymeleaf.ViewContext;
 
 @Controller
 @RequestMapping("/component")

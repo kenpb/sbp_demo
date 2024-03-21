@@ -4,8 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = {
-    "com.kenpb",
-    "gg/jte/generated/precompiled/com/kenpb",
+    "com.kenpb"
 })
 public class AppStarter {
 

@@ -1,7 +1,7 @@
 package com.kenpb.app;
 
 import de.tschuehly.spring.viewcomponent.core.component.ViewComponent;
-import de.tschuehly.spring.viewcomponent.jte.ViewContext;
+import de.tschuehly.spring.viewcomponent.thymeleaf.ViewContext;
 
 @ViewComponent
 public class AppViewComponent {
